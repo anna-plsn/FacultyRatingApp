@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Рейтинг ФКБ ТЭК</string>
+    <string name="menu_rating">Рейтинг</string>
+    <string name="menu_top">Топ рейтинга</string>
+    <string name="menu_by_group">Рейтинг по группам</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_exit">Выход</string>
+    <string name="by_faculty">По факультету</string>
+    <string name="by_group">По группе</string>
+</resources>

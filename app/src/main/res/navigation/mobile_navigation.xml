@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_rating">
+
+    <fragment
+        android:id="@+id/nav_rating"
+        android:name="com.example.rating.ui.Rating.RatingFragment"
+        android:label="@string/menu_rating"
+        tools:layout="@layout/fragment_rating" />
+
+    <fragment
+        android:id="@+id/nav_top"
+        android:name="com.example.rating.ui.Top.TopFragment"
+        android:label="@string/menu_top"
+        tools:layout="@layout/fragment_top" />
+
+
+    <fragment
+        android:id="@+id/nav_by_group"
+        android:name="com.example.rating.ui.Top.ByGroupFragment"
+        android:label="@string/menu_by_group"
+        tools:layout="@layout/fragment_by_group" />
+
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.rating.ui.Settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_exit"
+        android:name="com.example.rating.ui.Settings.SendFragment"
+        android:label="@string/menu_exit"
+        tools:layout="@layout/fragment_exit" />
+</navigation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/user_name_by_faculty_row"
+        android:layout_width="177dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@color/background"
+        android:gravity="center"
+        android:text="Иванов Иван Иванович"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/user_group_by_faculty_row"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="#EDEDED"
+        android:gravity="center"
+        android:text="КА-19-03"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/user_rating_by_faculty_row"
+        android:layout_width="10dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@color/background"
+        android:gravity="center"
+        android:text="100"
+        android:textColor="#000"
+        android:textSize="18sp" />
+</LinearLayout>

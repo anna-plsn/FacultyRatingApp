@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:addStatesFromChildren="false"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center|center_horizontal"
+        android:text="Регистрация"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/card_view_round_top">
+
+        <EditText
+            android:id="@+id/user_number"
+            android:layout_width="387dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="40dp"
+            android:gravity="clip_vertical|center_horizontal|top"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textAppearance="@style/DesignStyle"
+            android:textColor="#000"
+            android:textColorHint="@color/text"
+            android:textSize="18sp"
+            android:hint="Введите номер"
+            android:inputType="text|phone"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/get_code"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_round"
+            android:bufferType="normal"
+            android:padding="7dp"
+            android:textAppearance="@style/DesignStyle"
+            android:textColor="@color/background"
+            android:textSize="18sp"
+            android:layout_below="@id/user_number"
+            android:text="Получить код"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/user_save"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_round"
+            android:bufferType="normal"
+            android:padding="7dp"
+            android:textAppearance="@style/DesignStyle"
+            android:textColor="@color/background"
+            android:textSize="18sp"
+            android:layout_below="@id/password_user_repeat"
+            android:text="Сохранить"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/password_user_repeat"
+            android:layout_width="387dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="clip_vertical|center_horizontal|top"
+            android:inputType="textPassword"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textAppearance="@style/DesignStyle"
+            android:textColor="#000"
+            android:textColorHint="@color/text"
+            android:textSize="18sp"
+            android:layout_below="@id/password_user_new"
+            android:hint="Повторите пароль"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/password_user_new"
+            android:layout_width="387dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="40dp"
+            android:gravity="clip_vertical|center_horizontal|top"
+            android:inputType="textPassword"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textAppearance="@style/DesignStyle"
+            android:textColor="#000"
+            android:textColorHint="@color/text"
+            android:textSize="18sp"
+            android:hint="Придумайте пароль"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/user_code"
+            android:layout_width="387dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="40dp"
+            android:gravity="clip_vertical|center_horizontal|top"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textAppearance="@style/DesignStyle"
+            android:textColor="#000"
+            android:textColorHint="@color/text"
+            android:textSize="18sp"
+            android:hint="Введите код"
+            android:inputType="text|phone"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_registration"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_round"
+            android:bufferType="normal"
+            android:padding="7dp"
+            android:textAppearance="@style/DesignStyle"
+            android:textColor="@color/background"
+            android:textSize="18sp"
+            android:layout_below="@id/user_code"
+            android:text="Зарегестрироваться"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/code"
+            android:textAppearance="@style/DesignStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_code"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/nav_press"
+            android:visibility="gone"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/wrong_password"
+            android:textAppearance="@style/DesignStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password_user_repeat"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Пароли не совпадают"
+            android:textColor="@color/nav_press"
+            android:visibility="gone"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
